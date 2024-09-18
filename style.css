@@ -5,16 +5,40 @@
   padding: 0;
 }
 
-html, body {
+body {
   display:flex;
-  justify-content:center;
-  align-items:center;
   font-family: 'Press Start 2P';
   font-size: 1rem;
   line-height: 2;
   height: 100%;
   background-color: #221;
   text-transform: uppercase;
+  padding: 10px;
+}
+
+.nav {
+  display: flex; /* Ensure flexbox is applied */
+  justify-content: left; /* Center items horizontally */
+  position: absolute; /* Position it at the top */
+}
+
+.nav-index {
+  display: flex; /* Use flexbox for layout */
+  justify-content: left; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  position: absolute; /* Position it absolutely */
+  top: 25%;
+  left: 50%; /* Move to the center of the screen */
+  transform: translateX(-50%); /* Shift back by half its width to center it */
+  padding: 1rem 0; /* Add some vertical padding */
+  width: auto; /* Allow the width to adjust based on content */
+  flex-wrap: wrap;
+}
+
+.title {
+  flex-wrap: wrap;
+  font-size: medium;
+
 }
 
 a {
@@ -22,10 +46,15 @@ a {
   color: #fff090;
 }
 
-li {
+ul {
   color: #4FAF44;
+  justify-content: left;
 }
 
+.corner-nav {
+  justify-content: left;
+  display: table;
+}
 .arrow i {
   display: none;
 }
@@ -48,3 +77,20 @@ li {
   left: -6em;
 }
 
+.about {
+  color: white;
+}
+
+.home {
+  color: black;
+}
+
+.calendar {
+  justify-content: left;
+  padding-right: 25%;
+  color: white;
+}
+
+.form {
+  justify-content: left;
+}
